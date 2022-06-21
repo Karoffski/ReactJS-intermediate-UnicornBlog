@@ -1,25 +1,60 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { NavLink, Routes, Route } from 'react-router-dom';
+import logo from './logo.svg'
 
-function App() {
+const  App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <NavigationBar />
+      <Main />
     </div>
+    )
+}
+
+const NavigationBar = () => {
+  return (
+      <nav className="navigationbar">
+        <img src={logo} alt="logo" className='logo'/>
+        <ul>
+          <li><NavLink exact="true" to="/gallery">Gallery</NavLink></li>
+          <li><NavLink exact="true" to="/upload">Upload</NavLink></li>
+        </ul>
+      </nav>
   );
 }
+
+const Content = () => {
+  return (
+      <div className="content">
+          <h1>content</h1>
+          <p></p>
+      </div>
+  )
+}
+
+const Upload = () => {
+  return (
+      <div className="upload">
+          <p>upload</p>
+      </div>
+  )
+}
+
+const Gallery = () => {
+  return (
+      <div className="gallery">
+          <p>test</p>
+      </div>
+  )
+}
+
+const Main = () => (
+  <Routes>
+    <Route path='/' component={Content}></Route>
+    <Route path='/gallery' component={Gallery}></Route>
+    <Route path='/upload' component={Upload}></Route>
+  </Routes>
+);
 
 export default App;
