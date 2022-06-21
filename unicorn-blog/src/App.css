@@ -1,8 +1,11 @@
-.navigationbar {
-  max-height: 100 px;
+.navigation-bar {
+  height: 12vh;
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
 }
 
-.logo{
-  max-width: 10 px;
-  max-height: 10 px;
+.logo {
+  height: 10vh;
+  width: 10vh;
 }
