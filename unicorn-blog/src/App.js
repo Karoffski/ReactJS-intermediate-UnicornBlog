@@ -8,8 +8,8 @@ import { Upload } from './component/Upload';
 
 
 const App = () => {
+  
   return (
-    
     <div>
       <NavigationBar/>
       <Routes>
