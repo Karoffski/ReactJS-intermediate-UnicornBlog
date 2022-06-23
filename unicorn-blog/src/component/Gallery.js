@@ -1,20 +1,21 @@
 import React from "react";
 import useFetch from "react-fetch-hook";
+import CircularProgress from '@mui/material/CircularProgress';
 
 export const Gallery = () => {
 
 const { isLoading, data } = useFetch("https://jsonplaceholder.typicode.com/photos")
 
     return isLoading ? (
-        <p>Loading...</p>
+        <CircularProgress />
     ) : (
-        <div>
+        <div className="gallery">
         {data.map((picture) => {
-                return (
-                    <img src={picture.thumbnailUrl} alt={picture.title}/>    
-                )
-            }
-        )}
+            return (
+                <img className="image" src={picture.url} alt={picture.title}/>    
+            )
+        }
+    )}
         </div>
     )
 }

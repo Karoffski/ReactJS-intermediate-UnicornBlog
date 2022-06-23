@@ -1,11 +1,98 @@
 .navigation-bar {
-  height: 12vh;
-  background-color: grey;
+  height: 14vh;
+  background-color: pink;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.categories {
+  display: flex;
+  flex-direction: row;
+  padding-right: 5vh;
+  padding-top: 3vh;
 }
 
 .logo {
-  height: 10vh;
+  height: 11vh;
+  width: 11vh;
+  padding-top: 1vh;
+  padding-left: 1vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1vh;
+  margin-right: 60vh;
+  margin-left: 60vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  border: 2mm solid lightcoral;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.gallery {
+  background-color: lightskyblue;
+  display: block;
+  text-align: center;
+  margin-left: 10vh;
+  margin-right: 10vh;
+}
+
+.image {
+  height: 60vh;
+  width: 60vh;
+  padding: 10vh;
+  border-radius: 20vh;
+}
+
+.upload {
+  background-color: lightgrey;
+  text-align: center;
+  padding: 10vh;
+  margin: 30vh;
+  margin-top: 15vh;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  padding-right: 2vh;
+}
+
+input {
+  margin-bottom: 1vh;
+}
+
+.inputText{
+  height: 20vh;
+  text-align: center;
+}
+
+.submit {
   width: 10vh;
+  height: 10vh;
+  display: flex;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+.titleInput {
+  width: 140vh;
 }
