@@ -6,8 +6,8 @@ import { Gallery } from './component/Gallery';
 import { NavigationBar } from './component/NavigationBar';
 import { Upload } from './component/Upload';
 import { Article } from './component/Article';
-
-const App = () => {
+import { Error404 } from './component/Error404'
+export default function App() {
 
   return (
     <div>
@@ -17,9 +17,8 @@ const App = () => {
           <Route path="upload" element={<Upload />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="articles/:articleId" element={<Article />} />
+          <Route element={<Error404/>} />
       </Routes>
     </div>
   )
 }
-
-export default App;

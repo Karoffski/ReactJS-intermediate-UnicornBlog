@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Chip from '@mui/material/Chip';
 import Box from '@mui/material/Box';
 
-export const Upload = () => {
+export function Upload() {
 
     const [title, setTitle] = useState('');
     const [text, setText] = useState('');

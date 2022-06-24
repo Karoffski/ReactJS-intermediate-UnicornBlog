@@ -3,7 +3,7 @@ import useFetch from "react-fetch-hook";
 import Linear from "./Linear";
 import Box from '@mui/material/Box';
 
-export const Gallery = () => {
+export function Gallery() {
 
     const { isLoading, data } = useFetch("https://jsonplaceholder.typicode.com/photos")
 

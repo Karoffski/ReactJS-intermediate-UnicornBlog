@@ -3,7 +3,7 @@ import logo from '../unicorn.svg';
 import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
 
-export const NavigationBar = () => {
+export function NavigationBar() {
   return (
     <div className="navigation-bar">
       <Link to="/"><img src={logo} alt="logo" className='logo'></img></Link>

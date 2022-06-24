@@ -6,7 +6,7 @@ import Stack from '@mui/material/Stack'
 import Linear from "./Linear";
 import Box from '@mui/material/Box';
 
-export const Content = () => {
+export function Content() {
 
   const { isLoading, data } = useFetch("https://jsonplaceholder.typicode.com/posts")
 
